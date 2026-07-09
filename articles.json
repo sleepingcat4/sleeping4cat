@@ -1,0 +1,27 @@
+[
+  {
+    "title": "A Study of Seq2Seq Deep Learning Model (Architecture-wise)",
+    "date": "August 2023",
+    "file": "1.md"
+  },
+  {
+    "title": "Whisper-Explained: A Technical Dive into Radford’s Brilliance ",
+    "date": "October 2024",
+    "file": "2.md"
+  },
+  {
+    "title": "Galactica paper- Failed to receive to what it deserved",
+    "date": "October 2025",
+    "file": "3.md"
+  },
+  {
+    "title": "Mixture of Experts: Explained how Noam wrote it",
+    "date": "October 2025",
+    "file": "4.md"
+  },
+  {
+    "title": "AlexNet Explained: Exactly like Alex",
+    "date": "October 2025",
+    "file": "5.md"
+  }
+]
