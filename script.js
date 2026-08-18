@@ -90,28 +90,14 @@ function updateLayout() {
     const wrappers = document.querySelectorAll('.slide-wrapper');
     wrappers.forEach(w => {
         const enBlock = w.querySelector('.lang-block.en');
-        const heBlock = w.querySelector('.lang-block.he');
         const inner = w.querySelector('.slide-inner');
         
-        if (currentLang === 'en') {
+        if (enBlock) {
             w.style.height = `${enBlock.offsetHeight}px`;
-            inner.style.transform = 'translateY(0px)';
+            if (inner) inner.style.transform = 'translateY(0px)';
             enBlock.classList.add('active');
-            heBlock.classList.remove('active');
-        } else {
-            w.style.height = `${heBlock.offsetHeight}px`;
-            inner.style.transform = `translateY(-${enBlock.offsetHeight}px)`;
-            heBlock.classList.add('active');
-            enBlock.classList.remove('active');
         }
     });
-}
-
-function initLanguageToggle() {
-    setInterval(() => {
-        currentLang = currentLang === 'en' ? 'he' : 'en';
-        updateLayout();
-    }, 28000);
 }
 
 function playIntro() {
@@ -121,19 +107,18 @@ function playIntro() {
     const INTRO_FADE_MS = 2200;   
 
     setTimeout(() => {
-        intro.classList.add('fade-out');
-        content.classList.add('visible');
+        if (intro) intro.classList.add('fade-out');
+        if (content) content.classList.add('visible');
         document.documentElement.classList.add('intro-done');
 
         setTimeout(() => {
-            intro.remove();
+            if (intro) intro.remove();
         }, INTRO_FADE_MS);
     }, INTRO_HOLD_MS);
 }
 
 window.addEventListener('load', () => {
     updateLayout();
-    initLanguageToggle();
     loadBlog();
     playIntro();
 });
