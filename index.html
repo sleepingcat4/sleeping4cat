@@ -4,101 +4,392 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Heebo:wght@100..900&display=swap" rel="stylesheet">
-    
+
+    <meta
+        name="description"
+        content="Ammar — artificial intelligence research and engineering."
+    >
+
+    <meta name="theme-color" content="#f4f3ee">
+
     <link rel="icon" type="image/png" href="Ammar.jpg">
-    
+
     <title>Ammar</title>
 
     <link rel="stylesheet" href="style.css">
+
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
 
-    <audio id="bg-audio" src="audio.mp3" loop></audio>
-
-    <div id="intro-screen">
-        <p id="intro-verse">
-            &ldquo;I will never leave you nor forsake you.&rdquo;
-            <span class="intro-ref">Hebrews 13:5</span>
-        </p>
-    </div>
-
     <div id="site-content">
+
+        <header class="site-header">
+            <a href="/" class="site-logo-link" aria-label="Home">
+                <img
+                    src="ammar-remove.png"
+                    alt=""
+                    class="site-logo"
+                >
+            </a>
+        </header>
+
         <main>
-            <header>
-                <div class="audio-player-wrapper" id="js-audio-player" onclick="toggleAudio()">
-                    <button class="audio-control-btn" id="js-audio-btn" aria-label="Play audio">
-                        <svg id="js-play-icon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg id="js-pause-icon" viewBox="0 0 24 24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+
+            <section class="hero">
+
+                <h1>
+                    Breaking was passion.
+                    <span>
+                        Creating became my obsession.
+                    </span>
+                </h1>
+
+                <p class="hero-intro">
+                    I was a well-known grey-hat hacker who took an interest
+                    in the sub-field of artificial intelligence and became
+                    obsessed with breaking SOTA.
+                </p>
+
+            </section>
+
+            <section class="story story-dark">
+
+                <div class="story-content">
+
+                    <h2>
+                        Understanding how systems work and reverse engineering
+                        was the foundation.
+                    </h2>
+
+                    <p>
+                        I consider myself a lifelong hacker. Before, it was
+                        hacking systems and reverse engineering workflows and
+                        algorithms. Today, it is breaking down human
+                        understanding and hacking it into machines.
+                    </p>
+
+                    <p>
+                        I grew up around computers and had access to them from
+                        childhood, as my family comes from a background
+                        combining software engineering, mathematics and
+                        drama school.
+                    </p>
+
+                    <p class="secondary">
+                        I still very much indulge in hacking, particularly
+                        DEF CONs and CTFs, while keeping my obsession with the
+                        sub-field of artificial intelligence as my primary
+                        focus.
+                    </p>
+
+                </div>
+
+            </section>
+
+            <section class="story story-cream">
+
+                <div class="story-content">
+
+                    <h2>
+                        I came to Artificial Intelligence from absolute tragedy.
+                    </h2>
+
+                    <p>
+                        I wanted to become a neurologist, but a high-school
+                        crush on an Iraqi girl made me reconsider my prospects
+                        in Computer Science. She wanted me to study something
+                        more presentable than hacking and become a cybersecurity
+                        researcher.
+                    </p>
+
+                    <p>
+                        The rest happened because I saw the respect a top
+                        researcher receives at places like ICLR, ICML and
+                        NeurIPS. It instantly told my young mind:
+                        I have to become one of them.
+                    </p>
+
+                </div>
+
+            </section>
+
+            <section class="story story-green">
+
+                <div class="story-content">
+
+                    <h2>
+                        Initial experiment.
+                    </h2>
+
+                    <p>
+                        By seventeen, I was working at the Harvard
+                        University-funded Harvard GAMI lab. I worked on projects
+                        including cell segmentation in data-constrained settings
+                        with Prof. Anna Yaroslavsky, bone fracture detection,
+                        and a reward-hacking chatbot with Dr. Kiran
+                        Agarwal-Harding.
+                    </p>
+
+                    <p>
+                        I was leading a team that included Luca Leibi,
+                        Emma Farina and a few others, among whom some are now
+                        doing their PhDs at Harvard University.
+                    </p>
+
+                </div>
+
+            </section>
+
+            <section class="story story-cream">
+
+                <div class="story-content">
+
+                    <h2>
+                        Intelligence was bigger than AI.
+                    </h2>
+
+                    <p>
+                        I went to take an internship at the Genzel Lab because
+                        I had missed the window to apply for the Janelia
+                        Research Campus by HHMI. I applied to work with
+                        Prof. Lisa Genzel and, after a few months, resigned.
+                    </p>
+
+                    <p>
+                        I then continued at the Donders Institute for Brain,
+                        Cognition and Behaviour as a guest researcher with
+                        Prof. Paul Tiesinga. I worked with him for a few months
+                        before leaving.
+                    </p>
+
+                </div>
+
+            </section>
+
+            <section class="story story-blue">
+
+                <div class="story-content">
+
+                    <h2>
+                        Discovering absurd scale.
+                    </h2>
+
+                    <p>
+                        Leaving Donders, I found LAION through collaborating
+                        with them on LAION-Debate. That led me to work with
+                        Jenia Jitsev on EuroHPC supercomputers and EU grants,
+                        while being supervised by Christoph Schuhmann across
+                        different LAION projects and building internet-scale
+                        engineering infrastructure.
+                    </p>
+
+                    <p>
+                        I was a key part of multiple projects, including
+                        Project Alexandria, LAION-Debate, the LAION-Intel
+                        collaboration, internet-scale download projects,
+                        LAION-Tunes and more.
+                    </p>
+
+                    <a
+                        href="https://laion.ai/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="story-link"
+                    >
+                        LAION ↗
+                    </a>
+
+                </div>
+
+            </section>
+
+            <section class="story story-black">
+
+                <div class="story-content">
+
+                    <h2>
+                        Departing LAION and ELLIS Influence.
+                    </h2>
+
+                    <p>
+                        I left LAION and ELLIS in quite an unfriendly manner.
+                        We are still friends, however, and I met many wonderful
+                        people there. Several of them now work at Cloudflare,
+                        Google DeepMind and OpenAI, while others lead their own
+                        teams as postdocs.
+                    </p>
+
+                    <p>
+                        At LAION, a few of us had started Sleeping AI as a joke,
+                        where we would publish experiments. When I left LAION,
+                        Sleeping AI transitioned into its own independent
+                        entity.
+                    </p>
+
+                    <p>
+                        Sleeping AI has a mixed reputation regarding the
+                        research sub-fields it chooses, but it focuses on
+                        producing technically strong work and SOTA
+                        contributions.
+                    </p>
+
+                </div>
+
+            </section>
+
+            <section class="story story-red">
+
+                <div class="story-content">
+
+                    <h2>
+                        Small teams.
+                        Large problems.
+                    </h2>
+
+                    <p>
+                        Sleeping AI rethinks the LAION mentality, but we lean
+                        heavily on high-value technical collaboration because
+                        we deliberately want to keep teams small and produce
+                        results faster.
+                    </p>
+
+                    <p>
+                        We currently work with Kandinsky Lab in Russia on
+                        multimodality and audio models, evaluations and
+                        datasets. I moved towards collaborating with people
+                        fanatic enough to believe that we can answer
+                        P versus NP.
+                    </p>
+
+                </div>
+
+            </section>
+
+            <section class="closing">
+
+                <h2>
+                    Achieving SOTA<br>
+                    isn't the objective.
+                    <span>
+                        Finding answers is.
+                    </span>
+                </h2>
+
+                <div class="closing-actions">
+
+                    <a
+                        href="mailto:sleepingcat4@sleepingcat4.com"
+                        class="closing-link"
+                    >
+                        Contact ↗
+                    </a>
+
+                    <button
+                        class="notebook-launch"
+                        type="button"
+                        onclick="openNotebook()"
+                    >
+                        <span>Notebook</span>
+                        <span class="notebook-launch-arrow">↗</span>
                     </button>
-                    <div class="waveform-container">
-                        <div class="waveform-bar"></div>
-                        <div class="waveform-bar"></div>
-                        <div class="waveform-bar"></div>
-                        <div class="waveform-bar"></div>
-                        <div class="waveform-bar"></div>
-                    </div>
-                </div>
-                <div class="logo-container">
-                    <img src="ammar-remove.png" alt="Logo" class="site-logo">
-                </div>
-            </header>
-            
-            <div id="about-container">
-                <div class="slide-wrapper">
-                    <div class="slide-inner">
-                        <div class="lang-block en">
-                            <p>I am an artificial intelligence researcher with an experience of seven years. I started young at 16 by volunteering at ICLR and became a volunteer Moderator since my oral moderator was absent at ICML same year. Growing up seeing well-known researchers made me fall for this field, whilst I was previously a hacker. I used to specialise in algorithm manipulation and finding bugs.</p>
-                        </div>
-                    </div>
+
                 </div>
 
-                <div class="slide-wrapper">
-                    <div class="slide-inner">
-                        <div class="lang-block en">
-                            <p>Hacking background gave me an in-depth understanding in the field and I made friends. Coming to AI was a choice I made provided that all my family worked in Software Engineering. I fell for the elegance of mathematics, and how it can shape process of information. I had been involved with leading team since 18, where I used to work for Harvard GAMI in team lead and research positions and later went to Donders Institute for Brain, Cognition and Behaviour.</p>
-                        </div>
-                    </div>
-                </div>
+            </section>
 
-                <div class="slide-wrapper">
-                    <div class="slide-inner">
-                        <div class="lang-block en">
-                            <p>Similarly, I enjoyed working in Neuroscience but writing scripts and fixing images wasn't my activity, as I wanted my contributions to exhibit in respected works for human advancement. I worked with <a href="https://laion.ai/">LAION</a> for a brief period before breaking away but I learnt a tremendous amount there and including compilation of extreme-scale datasets and working with state-of-art infrastructure. I moved countries recently because I wanted a change.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slide-wrapper">
-                    <div class="slide-inner">
-                        <div class="lang-block en">
-                            <p><strong>Research Collaboration:</strong> I mentor students and collaborate at a semi-regular basis. whilst I don't have prerequisites, I prefer working with fast-pace teams and people who aren't shy becoming SOTA. I left teams that became stagnant. Mind considering emailing me: <a href="mailto:sleepingcat4@sleepingcat4.com">sleepingcat4@sleepingcat4.com</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="blog-container">
-                <aside class="blog-sidebar">
-                    <h2>Notebook</h2>
-                    <ul class="post-list" id="js-post-list"></ul>
-                </aside>
-                <article class="blog-content">
-                    <div class="markdown-render" id="js-blog-render"></div>
-                </article>
-            </div>
         </main>
 
-        <footer>
-            <div>Made by sleepingcat4</div>
-        </footer>
+    </div>
+
+    <div
+        id="notebook-modal"
+        class="notebook-modal"
+        aria-hidden="true"
+    >
+
+        <div
+            class="notebook-backdrop"
+            onclick="closeNotebook()"
+        ></div>
+
+        <div class="notebook-window">
+
+            <header class="notebook-topbar">
+
+                <div class="notebook-brand">
+                    Notebook
+                </div>
+
+                <div class="notebook-controls">
+
+                    <button
+                        id="js-share-article"
+                        class="notebook-control"
+                        type="button"
+                        onclick="shareCurrentArticle()"
+                        hidden
+                    >
+                        Share
+                    </button>
+
+                    <button
+                        class="notebook-control"
+                        type="button"
+                        onclick="closeNotebook()"
+                    >
+                        Close
+                    </button>
+
+                </div>
+
+            </header>
+
+            <div class="notebook-layout">
+
+                <aside class="notebook-sidebar">
+
+                    <ul
+                        class="post-list"
+                        id="js-post-list"
+                    ></ul>
+
+                </aside>
+
+                <section class="notebook-reader">
+
+                    <div
+                        class="notebook-empty"
+                        id="js-notebook-empty"
+                    >
+                        <h2>
+                            Select something<br>
+                            worth reading.
+                        </h2>
+                    </div>
+
+                    <article
+                        class="blog-content"
+                        id="js-blog-content"
+                        hidden
+                    >
+                        <div
+                            class="markdown-render"
+                            id="js-blog-render"
+                        ></div>
+                    </article>
+
+                </section>
+
+            </div>
+
+        </div>
+
     </div>
 
     <script src="script.js"></script>
+
 </body>
 
 </html>
